@@ -2,20 +2,14 @@ package th.list;
 
 public class MyListTest {
     public static void main(String[] args) {
-        MyList<Integer> listInteger = new MyList<Integer>();
-        listInteger.add(1);
-        listInteger.add(2);
-        listInteger.add(3);
-        listInteger.add(3);
-        listInteger.add(4);
+        //ArrayList<Integer> al=new ArrayList<>(4);
+        MyList<Integer> al=new MyList<>(4);
+        al.add(1);
+        al.add(12);
+        al.add(12);
+        al.add(3,7);
 
-        System.out.println("element 4: "+listInteger.get(4));
-        System.out.println("element 1: "+listInteger.get(1));
-        System.out.println("element 2: "+listInteger.get(2));
-//
-//        listInteger.get(5);
-//        System.out.println("element 5: "+listInteger.get(5));
-        listInteger.get(-1);
-        System.out.println("element -1: " + listInteger.get(-1));
+        System.out.println(al.get(12));
+
     }
 }
